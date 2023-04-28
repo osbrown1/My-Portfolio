@@ -22,4 +22,4 @@ What additional tools, frameworks, libraries, APIs, or other resources will thes
 •	Portfolio: File size manipulation, packaging and exporting it inside the engine
 
 Is there anything else you'd like your instructor to know?
-•	Not at the moment
+•	Working on a way to commit and push my unreal game with .gitignore in order to deal with the file size.

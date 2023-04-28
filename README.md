@@ -14,6 +14,19 @@ A portfolio with my favorite projects to check out
    
 ## Setup and Installation
 
+
+
+### Research & Planning Log
+#### Friday, 04/28
+* 8:00: prioritize to-dos
+* 8:45: research tutorials for Tailwind and Assets for Game from Unreal Marketplace
+* 11:30: learning to use landscape and foliage tools in Unreal, 
+* 1:40: Further research into how to use Git to with Unreal Engine projects
+
+
+
+
+
 Clone this project to your local machine by using the following command:
 ```
 git clone https://github.com/osbrown1/Portfolio-ReactProject.git
