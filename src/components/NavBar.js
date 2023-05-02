@@ -6,9 +6,6 @@ import { GithubIcon, LinkedInIcon } from './Icons'
 import {motion} from "framer-motion"
 
 
-
-
-
 const CustomLink = ({href, title, className=""}) => {
   const router = useRouter();
   
