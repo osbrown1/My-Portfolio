@@ -5,6 +5,8 @@ import profilePic from "../../public/images/profile/sunny.jpg"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
+import HireMe from '@/components/HireMe'
+
 
 
 export default function Home() {
@@ -45,6 +47,8 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
               </div>
               </div>
       </Layout>
+
+      <HireMe />
     </main>
     </>
   )
