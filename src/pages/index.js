@@ -6,6 +6,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 
 
@@ -31,7 +32,7 @@ export default function Home() {
 Explore my latest projects and articles, showcasing my expertise in React.js and web development.
               </p>
               <div className='flex items-center self-start mt-2'>
-                <Link href="/dummy.pdf" target={"_blank"}
+                <Link href="/Owen Resume.pdf" target={"_blank"}
                 className='flex items-center bg-dark text-light p-2.5 px-6
                 rounder-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark'
@@ -49,6 +50,9 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
       </Layout>
 
       <HireMe />
+      <div className='absolute right-8 bottom-8 inline-block w-24'>
+        <Image src={lightBulb} alt="OwenBrown" className='w-full h-auto' />
+      </div>
     </main>
     </>
   )
