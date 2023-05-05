@@ -63,14 +63,14 @@ const Education = () => {
 
         <ul className='w-full flex flex-col items-start justify-between ml-4'>
           <Details
-            type="Degree ( BA), Major (Philosophy)" 
+            type="Degree (BA), Major (Philosophy)" 
             time="Graduated: June, 2020" 
             place="Western Washington University" 
             info={info1}
           />
           <Details
             type="Coding Bootcamp, C#/React Track" 
-            time="Graduating: January, 2023" 
+            time="Graduated: 2023" 
             place="Epicodus" 
             info={info2}
           />
