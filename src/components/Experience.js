@@ -9,7 +9,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 
       <LiIcon reference={ref}/>
-      <div>
+      <motion.div
+        initial={{y:50}}
+        whileInView={{y:0}}
+        transition={{duration:0.5, type:"spring"}}
+      >
         <h3 className="capitalize font-bold text-2xl">
           {position}&nbsp;
           <a
@@ -17,14 +21,14 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             target="_blank"
             className="text-primary capitalize text-red-500"
           >
-            @{company}
+            {company}
           </a>
         </h3>
         <span className="capitalize font-medium text-dark/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
-      </div>
+      </motion.div>
     </li>
   );
 }
@@ -58,6 +62,15 @@ const Experience = () => {
         work="▪ Used RoomKey Property Management Software to organize and track guests I would check in and out.
               ▪ Developed filing, data entry, and organizational practices.
               ▪ Trained new employees on systems and procedures."
+        />
+
+        <Details
+        position="Freelance Developer"  
+        time="January 2020 – Current" address="Seattle, WA"
+        work="▪ Solo-developed first-person-shooter game with multiplayer functionality.
+              ▪ Built dedicated servers using source build of UE5.
+              ▪ Designed unique weapon recoil patterns and character animations.
+              ▪ Developed skills using the Blueprints visual scripting system in the Unreal Engine to create games."
         />
         </ul>
       </div>
