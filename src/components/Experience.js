@@ -31,23 +31,20 @@ const Experience = () => {
       </h2>
 
       <div className='w-[75%] mx-auto relative'>
-        <ol className="list-disc my-2"> 
-          <Details
-            position="Front Desk Agent" company="Strathcona Hotel" 
-            companyLink="https://strathconahotel.com" 
-            time="March 2021 – November 2022" address="Victoria, BC"
-            work={<>
-              <li className="my-2">Used RoomKey Property Management Software to organize and track guests I would check in and out.</li> 
-              <li className="my-2">Developed filing, data entry, and organizational practices.</li> 
-              <li className="my-2">Trained new employees on systems and procedures.</li> 
-            </>}
-          />
-        </ol>
+        <ul>
+        <Details
+        position="Front Desk Agent" company="Strathcona Hotel" 
+        companyLink="https://strathconahotel.com" 
+        time="March 2021 – November 2022" address="Victoria, BC"
+        work="▪ Used RoomKey Property Management Software to organize and track guests I would check in and out.
+              ▪ Developed filing, data entry, and organizational practices.
+              ▪ Trained new employees on systems and procedures."
+        />
+        </ul>
       </div>
     </div>
-  );
-};
-
-
+      
+  )
+}
 
 export default Experience
