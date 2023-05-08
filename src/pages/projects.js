@@ -42,7 +42,9 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 const Project = ({title, type, img, link, github}) => {
     
   return(
-      <article>
+      <article className='w-full flex items-center justify-center rounded-2xl border border-solid 
+      border-dark bg-light p-6 relative
+      '>
         <Link href={link} target="_blank"
       className='w-full cursor-pointer overflow-hidden rounded-lg'
       >
@@ -54,7 +56,7 @@ const Project = ({title, type, img, link, github}) => {
         <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
         <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
       </Link>
-      <p className='my-2 font-medium text-dark'>{summary}</p>
+      
       <div className='mt-2 flex items-center'>
         <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
         <Link href={link} target='_blank'
