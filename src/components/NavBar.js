@@ -2,8 +2,9 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Logo from './Logo'
-import { GithubIcon, LinkedInIcon } from './Icons'
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
 import {motion} from "framer-motion"
+import useThemeSwitcher from './hooks/useThemeSwitcher'
 
 
 const CustomLink = ({href, title, className=""}) => {
@@ -18,10 +19,15 @@ const CustomLink = ({href, title, className=""}) => {
 
     </Link>
   )
-}
+};
 
 
-const NavBar = () => (
+const NavBar = () => {
+
+  const [mode, setMode] = useThemeSwitcher();
+
+
+  return(
   <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
     <nav>
       <CustomLink href="/" title="Home" className='mr-4' />
@@ -32,6 +38,17 @@ const NavBar = () => (
     <nav className='flex items-center justify-center flex-wrap'>
       <motion.a href="https://github.com/osbrown1" target={"_blank"}whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mx-3"><GithubIcon /></motion.a>
       <motion.a href="https://www.linkedin.com/in/obrwn/" target={"_blank"}whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mx-3"><LinkedInIcon /></motion.a>
+
+    <button
+    onClick={() => setMode(mode === "light" ? "dark" : "light")}
+    >
+        {
+          mode === "dark" ?
+          <SunIcon className={"fill-dark"} />
+          : <MoonIcon className={"fill-dark"} />
+        }
+    </button>
+
     </nav>
 
     <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
@@ -39,7 +56,8 @@ const NavBar = () => (
     </div>
 
   </header>
-);
+  );
+};
 
 export default NavBar;
 
