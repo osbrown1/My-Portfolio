@@ -59,9 +59,9 @@ const Project = ({title, type, img, link, github}) => {
       
       <div className='w-full mt-2 flex items-center justify-between'>
       <Link href={link} target='_blank'
-        className='ml-4 text-lg font-semibold'
+        className='text-lg font-semibold underline'
         >Visit</Link>
-        <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
+        <Link href={github} target='_blank' className='w-8'> <GithubIcon /> </Link>
         
       </div>
 
@@ -94,8 +94,40 @@ const projects = () => {
               link="/"
               github="/"
               type="Featured Project"
+              />
 
+              
+            </div>
+            <div className='col-span-6'>
+            <Project 
+              title=""
+              img={project1}
+              summary=""
+              link="/"
+              github="/"
+              type="Featured Project"
+              />
 
+              
+            </div>
+            <div className='col-span-6'>
+            <Project 
+              title=""
+              img={project1}
+              summary=""
+              link="/"
+              github="/"
+              type="Featured Project"
+              />
+            </div>
+            <div className='col-span-12'>
+            <FeaturedProject 
+              title=""
+              img={project1}
+              summary=""
+              link="/"
+              github="/"
+              type="Featured Project"
               />
             </div>
             <div className='col-span-6'>
@@ -106,21 +138,17 @@ const projects = () => {
               link="/"
               github="/"
               type="Featured Project"
-
-
               />
             </div>
             <div className='col-span-6'>
-              Project-2
-            </div>
-            <div className='col-span-12'>
-              Featured Project
-            </div>
-            <div className='col-span-6'>
-              Project-3
-            </div>
-            <div className='col-span-6'>
-              Project-4
+            <Project 
+              title=""
+              img={project1}
+              summary=""
+              link="/"
+              github="/"
+              type="Featured Project"
+              />
             </div>
         </div>
       
