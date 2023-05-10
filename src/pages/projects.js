@@ -8,6 +8,7 @@ import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 
 
+
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
   return(
