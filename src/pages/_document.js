@@ -6,7 +6,6 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <body>
           <Script id="theme-switcher" strategy='beforeInteractive'>
           {`
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -16,10 +15,10 @@ export default function Document() {
 }
   `}
           </Script>
-        </body>
-        <Main />
+          <Main />
         <NextScript />
       </body>
     </Html>
   )
 }
+        
