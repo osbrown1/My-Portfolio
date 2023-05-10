@@ -9,6 +9,7 @@ import project1 from "../../public/images/projects/crypto-screener-cover-image.j
 
 
 
+
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
   return(
@@ -21,7 +22,10 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
       <Link href={link} target="_blank"
       className='w-1/2 cursor-pointer overflow-hidden rounded-lg'
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image src={img} alt={title} className="w-full h-auto" 
+        priority
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </Link>
       
       <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
