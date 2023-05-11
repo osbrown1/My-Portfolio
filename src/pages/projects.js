@@ -100,16 +100,16 @@ const projects = () => {
     <TransitionEffect />
     <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
       <Layout className='pt-16'>
-      <AnimatedText text="Imagination Trumps Knowledge!" 
+      <AnimatedText text="Take a Look at my Projects!" 
       className='mb-16'
       />
 
         <div className='grid grid-cols-12 gap-24 gap-y-32'>
             <div className='col-span-12'>
               <FeaturedProject 
-              title=""
+              title="FPS Zombie Survival"
               img={project1}
-              summary=""
+              summary="Survive waves of enemies in a deadly environment"
               link="/"
               github="/"
               type="Featured Project"
@@ -119,11 +119,11 @@ const projects = () => {
             </div>
             <div className='col-span-6'>
             <Project 
-              title=""
+              title="Currency Exchanger"
               img={project1}
               summary=""
               link="/"
-              github="/"
+              github="https://github.com/osbrown1/Currency-Exchanger"
               type="Featured Project"
               />
 
@@ -131,41 +131,41 @@ const projects = () => {
             </div>
             <div className='col-span-6'>
             <Project 
-              title=""
+              title="Factory"
               img={project1}
               summary=""
               link="/"
-              github="/"
+              github="https://github.com/osbrown1/Dr.-Sillystringz-s-Factory"
               type="Featured Project"
               />
             </div>
             <div className='col-span-12'>
             <FeaturedProject 
-              title=""
+              title="Burning Oil"
               img={project1}
-              summary=""
-              link="/"
-              github="/"
+              summary="Explore a small but unique pixelated world with vast verticality and a boss fight."
+              link="https://play.unity.com/mg/other/webgl-builds-338664"
+              github="https://github.com/osbrown1/BurningOilV2"
               type="Featured Project"
               />
             </div>
             <div className='col-span-6'>
             <Project 
-              title=""
+              title="Pierre's Treats"
               img={project1}
               summary=""
               link="/"
-              github="/"
+              github="https://github.com/osbrown1/PierreTreats"
               type="Featured Project"
               />
             </div>
             <div className='col-span-6'>
             <Project 
-              title=""
+              title="Ice Cream Review Tracker"
               img={project1}
               summary=""
               link="/"
-              github="/"
+              github="https://github.com/osbrown1/LocalBusinessInventoryTracker"
               type="Featured Project"
               />
             </div>
