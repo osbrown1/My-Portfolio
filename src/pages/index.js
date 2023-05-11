@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from "../../public/images/profile/sunny.jpg"
+import profilePic from "../../public/images/profile/final.jpg"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
@@ -31,9 +31,9 @@ export default function Home() {
           </div>
           <div className='w-1/2 flex flex-col items-center self-center'>
           <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left'/>
-              <p className='my-4 text-base font-medium'>
-              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              <p className='my-4 text-base font-medium !text-left'>
+              As a skilled full-stack developer, I am dedicated to turning ideas into innovative applications. 
+              Explore my latest projects, showcasing my expertise in game design and web development.
               </p>
               <div className='flex items-center self-start mt-2'>
                 <Link href="/Owen Resume.pdf" target={"_blank"}
@@ -56,7 +56,7 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
       </Layout>
 
       <HireMe />
-      <div className='absolute right-8 bottom-8 inline-block w-24'>
+      <div className='absolute right-8 bottom-12 inline-block w-24'>
         <Image src={lightBulb} alt="OwenBrown" className='w-full h-auto' />
       </div>
     </main>
