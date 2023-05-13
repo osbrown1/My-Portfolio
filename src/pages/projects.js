@@ -51,42 +51,42 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
   )
 }
 
-const Project = ({title, type, img, link, github}) => {
+// const Project = ({title, type, img, link, github}) => {
     
-  return(
-      <article className='w-full flex-flex-col item-center justify-center rounded-2xl
-      border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
-      '> 
-      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
-       rounded-br-3xl dark:bg-light
-       ' />
-      <Link href={link} target="_blank"
-      className='w-full cursor-pointer overflow-hidden rounded-lg'
-      >
-        <FramerImage src={img} alt={title} className="w-full h-auto" 
-        whileHover={{scale:1.05}}
-        transition={{duration:0.2}}
-        />
-      </Link>
+//   return(
+//       <article className='w-full flex-flex-col item-center justify-center rounded-2xl
+//       border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
+//       '> 
+//       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
+//        rounded-br-3xl dark:bg-light
+//        ' />
+//       <Link href={link} target="_blank"
+//       className='w-full cursor-pointer overflow-hidden rounded-lg'
+//       >
+//         <FramerImage src={img} alt={title} className="w-full h-auto" 
+//         whileHover={{scale:1.05}}
+//         transition={{duration:0.2}}
+//         />
+//       </Link>
       
-      <div className='w-full flex flex-col items-start justify-between mt-4'>
-        <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
-        <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
-        <h2 className='my-2 w-full text-left text-3xl font-bold'>{title}</h2>
-      </Link>
+//       <div className='w-full flex flex-col items-start justify-between mt-4'>
+//         <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
+//         <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
+//         <h2 className='my-2 w-full text-left text-3xl font-bold'>{title}</h2>
+//       </Link>
       
-      <div className='w-full mt-2 flex items-center justify-between'>
-      <Link href={link} target='_blank'
-        className='text-lg font-semibold underline'
-        >Visit</Link>
-        <Link href={github} target='_blank' className='w-8'> <GithubIcon /> </Link>
+//       <div className='w-full mt-2 flex items-center justify-between'>
+//       <Link href={link} target='_blank'
+//         className='text-lg font-semibold underline'
+//         >Visit</Link>
+//         <Link href={github} target='_blank' className='w-8'> <GithubIcon /> </Link>
         
-      </div>
+//       </div>
 
-      </div>
-      </article>
-  )
-}
+//       </div>
+//       </article>
+//   )
+// }
 
 
 
@@ -109,33 +109,19 @@ const projects = () => {
               <FeaturedProject 
               title="FPS Zombie Survival"
               img={project1}
-              summary="Survive waves of enemies in a deadly environment"
+              summary="Survive waves of enemies in a deadly environment."
               link="/"
               github="/"
               type="Featured Project"
               />
-
-              
             </div>
-            <div className='col-span-6'>
-            <Project 
-              title="Currency Exchanger"
+            <div className='col-span-12'>
+            <FeaturedProject 
+              title="Ice Cream Review Tracker"
               img={project1}
-              summary=""
+              summary="This site allows the user to add reviews to the ice cream they've tried. They can fill out a form that lets them enter in the flavor and the brand, and then leave a review and edit everything later."
               link="/"
-              github="https://github.com/osbrown1/Currency-Exchanger"
-              type="Featured Project"
-              />
-
-              
-            </div>
-            <div className='col-span-6'>
-            <Project 
-              title="Factory"
-              img={project1}
-              summary=""
-              link="/"
-              github="https://github.com/osbrown1/Dr.-Sillystringz-s-Factory"
+              github="https://github.com/osbrown1/LocalBusinessInventoryTracker"
               type="Featured Project"
               />
             </div>
@@ -149,33 +135,26 @@ const projects = () => {
               type="Featured Project"
               />
             </div>
-            <div className='col-span-6'>
-            <Project 
+            <div className='col-span-12'>
+            <FeaturedProject 
               title="Pierre's Treats"
               img={project1}
-              summary=""
+              summary="A website with user authorization that lets a patron browse treats and their flavors, and lets those authorized edit available products."
               link="/"
               github="https://github.com/osbrown1/PierreTreats"
               type="Featured Project"
               />
             </div>
-            <div className='col-span-6'>
-            <Project 
-              title="Ice Cream Review Tracker"
-              img={project1}
-              summary=""
-              link="/"
-              github="https://github.com/osbrown1/LocalBusinessInventoryTracker"
-              type="Featured Project"
-              />
-            </div>
         </div>
-      
       </Layout>
-    </main>
+    </main>     
 
     </>
   )
 }
 
-export default projects
+export default projects        
+      
+      
+
+    
