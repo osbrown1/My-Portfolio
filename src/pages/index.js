@@ -30,12 +30,12 @@ export default function Home() {
             />
           </div>
           <div className='w-1/2 flex flex-col items-center self-center'>
-          <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left'/>
-              <p className='my-4 text-base font-medium !text-left'>
+          <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left p-4'/>
+              <p className='my-4 text-base font-medium !text-left p-4'>
               As a skilled full-stack developer, I am dedicated to turning ideas into innovative applications. 
               Explore my latest projects, showcasing my expertise in game design and web development.
               </p>
-              <div className='flex items-center self-start mt-2'>
+              <div className='flex items-center self-start mt-2 p-4'>
                 <Link href="/Owen Resume.pdf" target={"_blank"}
                 className='flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
@@ -56,8 +56,8 @@ export default function Home() {
       </Layout>
 
       <HireMe />
-      <div className='absolute right-8 bottom-12 inline-block w-24'>
-        <Image src={lightBulb} alt="OwenBrown" className='w-full h-auto' />
+      <div className='absolute right-8 bottom-12 inline-block w-24 '>
+        <Image src={lightBulb} alt="OwenBrown" className='w-full h-auto p' />
       </div>
     </main>
     </>

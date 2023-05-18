@@ -87,7 +87,7 @@ every project I work on. I look forward to the opportunity to bring my skills an
 
       <div className='flex flex-col items-end justify-center'>
         <span className='inline-block text-7xl font-bold'>
-        <AnimatedNumbers value={50} />+
+        <AnimatedNumbers value={60} />+
         </span >
         <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>projects completed</h2>
       </div>
