@@ -1,7 +1,7 @@
 # Portfolio 
 
 #### By Owen Brown
-A portfolio with my favorite projects to check out
+A portfolio with my favorite projects to check out. Feel free to look at it now: https://my-portfolio-osbrown1.vercel.app
 
 ## Technologies Used
 
