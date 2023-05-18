@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
 import project1 from "../../public/images/projects/ZombieFPS.jpg";
-import project2 from "../../public/images/projects/IceCream.jpg";
 import project3 from "../../public/images/projects/Oil.jpg";
 import project4 from "../../public/images/projects/Sweets.jpg";
 import { motion } from "framer-motion";
@@ -58,26 +57,16 @@ const projects = () => {
       <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
-          <AnimatedText text="Take a Look at my Projects!" className='mb-16' />
+          <AnimatedText text="Some of My Favorite Projects" className='mb-16' />
 
           <div className='grid grid-cols-12 gap-24 gap-y-32'>
             <div className='col-span-12'>
               <FeaturedProject
-                title="FPS Zombie Survival"
+                title="Ghoul Slayer"
                 img={project1}
                 summary="This is a thrilling full-fledged first-person shooter developed in Unreal Engine, utilizing Blueprints for gameplay mechanics and incorporating various features such as AI, a vast landscape, smooth animations, and more. The game is designed around wave-based enemies that relentlessly chase and attack you, providing an intense and immersive gaming experience."
                 link="/"
                 github="https://github.com/osbrown1/FPSGame"
-                type="Featured Project"
-              />
-            </div>
-            <div className='col-span-12'>
-              <FeaturedProject
-                title="Ice Cream Review Tracker"
-                img={project2}
-                summary="This site allows the user to add reviews to the ice cream they've tried. They can fill out a form that lets them enter in the flavor and the brand, and then leave a review and edit everything later."
-                link="/"
-                github="https://github.com/osbrown1/LocalBusinessInventoryTracker"
                 type="Featured Project"
               />
             </div>
